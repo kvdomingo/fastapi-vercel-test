@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "fastapi-vercel-test"
+version = "0.1.0"
+description = ""
+authors = ["Kenneth V. Domingo <hello@kvd.studio>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+fastapi = { extras = ["standard"], version = "^0.115.5" }
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.7.4"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

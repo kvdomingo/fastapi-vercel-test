@@ -1,0 +1,10 @@
+version: 3
+
+tasks:
+  default:
+    desc: Run the development server
+    cmd: poetry run fastapi dev --port 8000 --reload api/index.py
+
+  txt:
+    desc: Generate requirements.txt
+    cmd: poetry export -f requirements.txt --without-hashes --without dev > requirements.txt
